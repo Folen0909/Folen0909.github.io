@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ProjectLOGS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../Styles/details.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <!--NAVIGATION BAR-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <div class="navbar-header">
+                <div class="navbar-brand navbar-brand" href="../Pages/index.html">
+                    <img src="../Images/user-image.jpg" alt="User Icon" class="rounded-circle" style="width: 40px;">                   
+                    <a class="navbar-brand" href="../Pages/index.html">ProjectLOGS</a>
+                </div>
+                
+            </div>
+            <ul class="navbar-nav">
+                <li><a class="nav-link" href="../Pages/index.html">Home</a></li>
+                <li><a class="nav-link" href="../Pages/apps.html">Apps</a></li>
+            </ul>
+        </nav>
+        <!--NAVIGATION BAR END-->
+
+        <!--MAIN-->
+        <div id="main-details">
+            <!--FRAGMENTS-->
+            <div class="row">
+                <div class="col d-flex justify-content-center" style="margin-top: 5%;">
+                    <div class="card text-white bg-dark" style="max-width: 90%; padding:.5em;">
+                        <div class="col d-flex justify-content-center">
+                            <img src="../Images/fragment-user.png" class="card-img-top" alt="User fragment" style="max-width: 500px;">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Fragment User</h4>
+                            <h5 class="card-text">Fragment</h5>
+                            <h6 class="card-text">ProjectLOGS</h6>
+                            <p class="card-text">This is the first thing you see when you open the app. Here you can see the details of the user who is using the app. Informations you can get are: image, name, location and short description.<br>This fragment is part of view pager along side with <i>Build fragment</i>. Fragment contains one button that enables you to edit user info.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center" style="margin-top: 5%; ">
+                    <div class="card text-white bg-dark" style="max-width: 90%; padding:.5em;">
+                        <div class="col d-flex justify-content-center">
+                            <img src="../Images/fragment-build.png" class="card-img-top" alt="Build fragment" style="max-width: 500px;">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Fragment Build</h4>
+                            <h5 class="card-text">Fragment</h5>
+                            <h6 class="card-text">ProjectLOGS</h6>
+                            <p class="card-text">This view contains recycler view which contains all of the builds of that user. It is possible to add new builds by pressing on the button.<br>Builds can be deleted on single press, this will delete all data in that build. After pressing on any build new fragment is opened, <i>component fragment.</i></p>
+                        </div>
+                    </div>
+                </div><div class="col d-flex justify-content-center" style="margin-top: 5%;">
+                    <div class="card text-white bg-dark" style="max-width: 90%; padding:.5em;">
+                        <div class="col d-flex justify-content-center">
+                            <img src="../Images/fragment-component.png" class="card-img-top" alt="Component fragment" style="max-width: 500px;">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Fragment Component</h4>
+                            <h5 class="card-text">Fragment</h5>
+                            <h6 class="card-text">ProjectLOGS</h6>
+                            <p class="card-text">Component fragment is the last fragment at this time. It is used for showing all components in single build.<br>It is using recycler view in which items are represented by cards. Each card contains the components name and image.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!--FRAGMENTS END-->
+
+            <!--DIALOGS-->
+            <div class="row">
+                <div class="col d-flex justify-content-center" style="margin-top: 5%; margin-bottom: 5%;">
+                    <div class="card text-white bg-dark" style="max-width: 90%; padding:.5em;">
+                        <div class="col d-flex justify-content-center">
+                            <img src="../Images/dialog-user.png" class="card-img-top" alt="User dialog" style="max-width: 500px;">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Dialog User</h4>
+                            <h5 class="card-text">Dialog</h5>
+                            <h6 class="card-text">Fragment User</h6>
+                            <p class="card-text">This dialog pops up when <i>Edit user info</i> is pressed. When opened it shows three edit text fields, when editing, empty field is not accepted.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center" style="margin-top: 5%; margin-bottom: 5%;">
+                    <div class="card text-white bg-dark" style="max-width: 90%; padding:.5em;">
+                        <div class="col d-flex justify-content-center">
+                            <img src="../Images/dialog-build.png" class="card-img-top" alt="Build fragment" style="max-width: 500px;">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Dialog Build</h4>
+                            <h5 class="card-text">Dialog</h5>
+                            <h6 class="card-text">Fragment Build</h6>
+                            <p class="card-text">Same as <i>Dialog User</i>, this one opens by pressing <i>Add Build</i> button. Opening new dialog, you are presented with one edit text box for the build name.</p>
+                        </div>
+                    </div>
+                </div><div class="col d-flex justify-content-center" style="margin-top: 5%; margin-bottom: 5%;">
+                    <div class="card text-white bg-dark" style="max-width: 90%; padding:.5em;">
+                        <div class="col d-flex justify-content-center">
+                            <img src="../Images/dialog-component.png" class="card-img-top" alt="Fragment component" style="max-width: 500px;">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Dialog Component</h4>
+                            <h5 class="card-text">Dialog</h5>
+                            <h6 class="card-text">Fragment Component</h6>
+                            <p class="card-text">This dialog is one of the most complicated in this app. It contains two buttons, one for opening storege to pick image to be uploaded and the other to upload said image. There is edit text box for image name, if no name is writen, default value is <i>No name</i>. After pressing upload, progress bar starts to fill up.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!--DIALOG END-->
+        </div> 
+        <!--MAIN END-->
+        
+        <!-- FOOTER -->
+        <footer class="page-footer font-small bg-dark fixed-bottom">
+            <div class="col d-flex">
+                <ul class="navbar-nav">
+                    <li><a class="nav-link" href="../Pages/contact.html">Contact</a></li>
+                </ul>
+            </div> 
+        </footer>
+        <!--FOOTER END-->
+    </body>
+</html>
